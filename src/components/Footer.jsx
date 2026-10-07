@@ -154,9 +154,6 @@ export default function Footer() {
         <div className="container">
           <div className="footer__bottom-inner">
             <p>© {year} Palm Resort, Garh Ganga. All rights reserved.</p>
-            <p className="footer__bottom-credit">
-              Founded by <strong>Jitendra Kumar Gupta</strong> · Co-Founded by <strong>Reyansh Gupta</strong>
-            </p>
           </div>
         </div>
       </div>
