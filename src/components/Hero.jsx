@@ -33,9 +33,9 @@ export default function Hero() {
         </h1>
 
         <p className="hero__subtitle">
-          Nestled in the serene beauty of Garh Ganga, Uttar Pradesh — 
-          Palm Resort is your destination for luxury stays, grand celebrations, 
-          and unforgettable experiences.
+          Nestled in the serene beauty of Uttar Pradesh — Palm Resort is the premier 
+          <strong> resort near Garh Ganga, Garhmukteshwar, and Gajraula</strong>. 
+          Your perfect destination for family stays, grand celebrations, and private pool retreats.
         </p>
 
         <div className="hero__tags">

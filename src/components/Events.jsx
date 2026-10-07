@@ -68,8 +68,9 @@ export default function Events() {
           <div className="section-tag">Events & Celebrations</div>
           <h2 className="section-title">Every Occasion, <span>Perfectly</span> Curated</h2>
           <p className="section-subtitle" style={{ margin: '0 auto' }}>
-            From intimate gatherings to grand celebrations — our expert team handles every detail 
-            so you can focus on making memories.
+            Whether you are searching for a premium <strong>hotel or stay near Garhmukteshwar</strong>, 
+            or a grand <strong>event venue near Gajraula</strong>, Palm Resort is your ultimate destination. 
+            Our expert team handles every detail so you can focus on making memories.
           </p>
         </div>
 
@@ -85,9 +86,9 @@ export default function Events() {
             <div className="section-tag">🏛️ Our Event Venue</div>
             <h3 className="events__featured-title">Grand Event Hall & Lawn</h3>
             <p className="events__featured-desc">
-              Our elegantly designed event hall and expansive lawn make the perfect backdrop 
-              for weddings, receptions, and all special occasions. With customizable décor, 
-              professional lighting, and dedicated support — every event is executed to perfection.
+              Recognized as the premier <strong>wedding venue Gajraula</strong> and the top <strong>birthday party venue Gajraula</strong>, 
+              our elegantly designed event hall and expansive lawn make the perfect backdrop for all special occasions. 
+              With customizable décor, professional lighting, and dedicated support — every event is executed to perfection.
             </p>
             <ul className="events__featured-features">
               {['Grand Entrance Setup', 'Mandap Decoration', 'Stage & Backdrop', 'Customized Seating', 'Professional Lighting', 'Dedicated Event Team'].map((f) => (

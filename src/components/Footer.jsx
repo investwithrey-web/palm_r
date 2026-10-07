@@ -15,13 +15,7 @@ export default function Footer() {
             {/* Brand */}
             <div className="footer__brand">
               <div className="footer__logo">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-                  <circle cx="20" cy="20" r="19" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M20 8C20 8 14 14 14 20C14 23.3 16.7 26 20 26C23.3 26 26 23.3 26 20C26 14 20 8 20 8Z" fill="currentColor" opacity="0.3"/>
-                  <path d="M20 26V34" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                  <path d="M16 30H24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
-                <span>Palm Resort</span>
+                <span className="footer__logo-text">Palm Resort</span>
               </div>
               <p className="footer__tagline">
                 Where Every Moment Becomes a Memory
@@ -58,19 +52,17 @@ export default function Footer() {
               <h4 className="footer__col-title">Quick Links</h4>
               <ul className="footer__links">
                 {[
-                  ['Home', 'home'],
-                  ['About Us', 'about'],
-                  ['Rooms & Stay', 'rooms'],
-                  ['Events', 'events'],
-                  ['Experience', 'experience'],
-                  ['Dining', 'dining'],
-                  ['Gallery', 'gallery'],
-                  ['Contact', 'contact'],
-                ].map(([label, id]) => (
-                  <li key={id}>
-                    <button onClick={() => scrollTo(id)} className="footer__link" id={`footer-link-${id}`}>
+                  ['Home', '/'],
+                  ['About Us', '/#about'],
+                  ['Rooms', '/#rooms'],
+                  ['Events', '/#events'],
+                  ['Gallery', '/#gallery'],
+                  ['Contact', '/#contact'],
+                ].map(([label, path]) => (
+                  <li key={path}>
+                    <a href={path} className="footer__link" id={`footer-link-${label}`}>
                       <span>›</span> {label}
-                    </button>
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -96,6 +88,20 @@ export default function Footer() {
                     </span>
                   </li>
                 ))}
+              </ul>
+            </div>
+
+            {/* Locations & Venues */}
+            <div className="footer__col">
+              <h4 className="footer__col-title">Locations</h4>
+              <ul className="footer__links">
+                <li><a href="/resort-near-garh-ganga" className="footer__link"><span>›</span> Resort near Garh Ganga</a></li>
+                <li><a href="/resort-near-garhmukteshwar" className="footer__link"><span>›</span> Resort near Garhmukteshwar</a></li>
+                <li><a href="/resort-near-gajraula" className="footer__link"><span>›</span> Resort in Gajraula</a></li>
+                <li><a href="/birthday-party-venue-gajraula" className="footer__link"><span>›</span> Birthday Party Venue</a></li>
+                <li><a href="/wedding-venue-gajraula" className="footer__link"><span>›</span> Wedding Venue Gajraula</a></li>
+                <li><a href="/private-pool-resort-near-garhmukteshwar" className="footer__link"><span>›</span> Private Pool Resort</a></li>
+                <li><a href="/corporate-events-gajraula" className="footer__link"><span>›</span> Corporate Events</a></li>
               </ul>
             </div>
 
@@ -132,11 +138,9 @@ export default function Footer() {
               </div>
               <div className="footer__info">
                 <div className="footer__info-item">
-                  <span>📍</span>
                   <span>Near Garh Ganga, UP 244235</span>
                 </div>
                 <div className="footer__info-item">
-                  <span>🕐</span>
                   <span>Open 24 × 7</span>
                 </div>
               </div>

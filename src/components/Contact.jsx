@@ -85,7 +85,8 @@ export default function Contact() {
               <div className="contact-card__body">
                 <h3 className="contact-card__title">Visit Us</h3>
                 <p className="contact-card__desc">
-                  Palm Resort, Near Garh Ganga,<br />
+                  Palm Resort, Near Garh Ganga<br />
+                  (Opposite Road to McDonald's)<br />
                   Uttar Pradesh — 244235, India
                 </p>
                 <a
@@ -117,16 +118,17 @@ export default function Contact() {
             </div>
             <div className="contact__map-info">
               <div className="contact__map-info-item">
-                <span>📍</span>
-                <span>Near Garh Ganga, UP 244235</span>
+                <span>Palm Resort – Near Garh Ganga (Opp. road to McD), Gajraula, UP</span>
               </div>
               <div className="contact__map-info-item">
-                <span>🕐</span>
+                <span><strong>Distances:</strong><br />
+                • Garh Ganga: 5 mins<br />
+                • Garhmukteshwar: 10 mins<br />
+                • Gajraula: 10 mins<br />
+                • Ghaziabad: 50 mins</span>
+              </div>
+              <div className="contact__map-info-item">
                 <span>Open 24/7 for Guests</span>
-              </div>
-              <div className="contact__map-info-item">
-                <span>🚗</span>
-                <span>Ample Parking Available</span>
               </div>
             </div>
           </div>

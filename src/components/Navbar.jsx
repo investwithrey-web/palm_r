@@ -38,16 +38,11 @@ export default function Navbar() {
       <div className="navbar__inner container">
         {/* Logo */}
         <a href="#home" className="navbar__logo" onClick={() => handleNavClick('#home')}>
-          <div className="navbar__logo-icon">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="20" r="19" stroke="currentColor" strokeWidth="1.5"/>
-              <path d="M20 8C20 8 14 14 14 20C14 23.3 16.7 26 20 26C23.3 26 26 23.3 26 20C26 14 20 8 20 8Z" fill="currentColor" opacity="0.3"/>
-              <path d="M20 26V34" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M16 30H24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M20 8C20 8 14 14 14 20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-              <path d="M20 8C20 8 26 14 26 20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-            </svg>
-          </div>
+          <img 
+            src="/images/Tropical%20Sunset%20Palm%20Resort%20Logo.png" 
+            alt="Palm Resort Logo" 
+            className="navbar__logo-img" 
+          />
           <div className="navbar__logo-text">
             <span className="navbar__logo-name">Palm Resort</span>
             <span className="navbar__logo-sub">Garh Ganga, UP</span>

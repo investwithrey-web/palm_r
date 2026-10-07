@@ -63,8 +63,8 @@ export default function Experience() {
           <div className="section-tag">Resort Experience</div>
           <h2 className="section-title">Live the <span>Palm Resort</span> Life</h2>
           <p className="section-subtitle" style={{ margin: '0 auto' }}>
-            From splashing in our pools to unwinding in lush gardens — every moment at Palm Resort 
-            is designed to refresh your spirit.
+            Experience the best <strong>private pool resort near Gajraula</strong>. 
+            From splashing in our pools to unwinding in lush gardens — every moment is designed to refresh your spirit.
           </p>
         </div>
 
@@ -74,9 +74,6 @@ export default function Experience() {
             <div className="exp-card" key={exp.title} style={{ animationDelay: `${idx * 0.1}s` }}>
               <div className="exp-card__img">
                 <img src={exp.image} alt={exp.title} loading="lazy" />
-                <div className="exp-card__overlay">
-                  <span className="exp-card__icon">{exp.icon}</span>
-                </div>
               </div>
               <div className="exp-card__body">
                 <h3 className="exp-card__title">{exp.title}</h3>

@@ -38,17 +38,17 @@ export default function About() {
             </h2>
             <div className="gold-divider"><span className="gold-divider-icon">✦</span></div>
             <p className="about__text">
-              Nestled in the peaceful surroundings of Garh Ganga, Uttar Pradesh, 
-              Palm Resort is more than a destination — it's an experience. Founded 
-              with a vision to create a sanctuary where nature meets luxury, our 
-              resort has become the preferred venue for celebrations, corporate 
-              gatherings, and peaceful getaways.
+              Nestled near the peaceful holy river, Palm Resort is widely recognized as a top 
+              <strong> family resort near Garhmukteshwar</strong> and a leading 
+              <strong> resort near Brijghat</strong>. Founded with a vision to create a sanctuary where 
+              nature meets luxury, our resort has become the preferred choice for those seeking a 
+              <strong> couple resort near Gajraula</strong> and peaceful weekend getaways.
             </p>
             <p className="about__text">
-              From intimate family gatherings to grand weddings, we bring your 
-              dreams to life with personalized attention, exquisite spaces, and 
-              warm Uttar Pradesh hospitality. Every corner of Palm Resort tells 
-              a story of care, elegance, and dedication.
+              From intimate gatherings to massive corporate events, we bring your dreams to life. 
+              If you are looking for an exceptional <strong>event venue near Garh Ganga</strong>, 
+              we offer personalized attention, exquisite spaces, and warm hospitality. Every corner 
+              of Palm Resort tells a story of care, elegance, and dedication.
             </p>
 
             {/* Founders */}

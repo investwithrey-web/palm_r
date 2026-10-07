@@ -38,8 +38,8 @@ export default function Rooms() {
           <div className="section-tag">Accommodation</div>
           <h2 className="section-title">Rooms & <span>Stay</span></h2>
           <p className="section-subtitle" style={{ margin: '0 auto' }}>
-            Retreat into comfort with our thoughtfully designed rooms, offering a peaceful 
-            sanctuary amidst the lush surroundings of Palm Resort.
+            Looking for a relaxing stay or a <strong>resort in Gajraula</strong>? Retreat into comfort 
+            with our thoughtfully designed rooms, offering a peaceful sanctuary amidst lush surroundings.
           </p>
         </div>
 
