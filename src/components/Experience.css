@@ -1,0 +1,230 @@
+/* ===================== EXPERIENCE ===================== */
+.experience {
+  padding: var(--section-py) 0;
+  background: var(--cream);
+}
+
+.experience__header {
+  margin-bottom: 56px;
+}
+
+/* Experience Grid */
+.experience__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.exp-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  animation: fadeInUp 0.6s ease both;
+}
+
+.exp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.exp-card__img {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.exp-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.exp-card:hover .exp-card__img img {
+  transform: scale(1.08);
+}
+
+.exp-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  transition: all var(--transition-base);
+}
+
+.exp-card__icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.exp-card__body {
+  padding: 20px;
+}
+
+.exp-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.exp-card__desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* Event Spaces */
+.event-spaces {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  margin-bottom: 48px;
+  box-shadow: var(--shadow-sm);
+}
+
+.event-spaces__header {
+  margin-bottom: 36px;
+}
+
+.event-spaces__title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.event-spaces__title span {
+  color: var(--primary);
+}
+
+.event-spaces__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.space-card {
+  padding: 28px 24px;
+  background: var(--cream);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  transition: all var(--transition-base);
+}
+
+.space-card:hover {
+  border-color: var(--primary);
+  background: rgba(44, 95, 46, 0.04);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.space-card__icon {
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.space-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.space-card__desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Banner */
+.experience__banner {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  height: 420px;
+}
+
+.experience__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience__banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7) 0%,
+    rgba(0,0,0,0.3) 60%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 64px;
+  gap: 12px;
+}
+
+.experience__banner-overlay h3 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  max-width: 500px;
+  line-height: 1.25;
+}
+
+.experience__banner-overlay p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+  max-width: 400px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .experience__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-spaces__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .experience__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-spaces {
+    padding: 28px 20px;
+  }
+
+  .event-spaces__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .experience__banner {
+    height: 320px;
+  }
+
+  .experience__banner-overlay {
+    padding: 0 28px;
+  }
+
+  .experience__banner-overlay h3 {
+    font-size: 1.4rem;
+  }
+}

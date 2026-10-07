@@ -1,0 +1,205 @@
+/* ===================== EVENTS ===================== */
+.events {
+  padding: var(--section-py) 0;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.events__bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 80% 20%, rgba(44,95,46,0.05) 0%, transparent 50%),
+                    radial-gradient(circle at 20% 80%, rgba(201,149,42,0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.events__header {
+  margin-bottom: 56px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Featured */
+.events__featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 56px;
+  position: relative;
+  z-index: 1;
+}
+
+.events__featured-img {
+  position: relative;
+  height: 480px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.events__featured-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.events__featured-img:hover img {
+  transform: scale(1.04);
+}
+
+.events__featured-overlay {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: var(--shadow-md);
+}
+
+.events__featured-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 12px 0 16px;
+  line-height: 1.25;
+}
+
+.events__featured-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.events__featured-features {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  margin-bottom: 28px;
+}
+
+.events__featured-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.events__check {
+  width: 20px;
+  height: 20px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Event Grid Selector */
+.events__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.event-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 12px;
+  background: var(--cream);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.event-tile:hover {
+  border-color: var(--primary);
+  background: rgba(44, 95, 46, 0.05);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.event-tile__icon {
+  font-size: 1.5rem;
+}
+
+.event-tile__title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+/* Bottom CTA */
+.events__bottom-cta {
+  padding: 40px;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+.events__bottom-cta p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .events__featured {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .events__featured-img {
+    height: 350px;
+  }
+
+  .events__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .events__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events__featured-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .events__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

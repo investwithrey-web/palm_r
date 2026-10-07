@@ -1,0 +1,238 @@
+/* ===================== ABOUT ===================== */
+.about {
+  padding: var(--section-py) 0;
+  background: var(--white);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Images */
+.about__images {
+  position: relative;
+  height: 580px;
+}
+
+.about__img-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68%;
+  height: 72%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  z-index: 2;
+}
+
+.about__img-main img,
+.about__img-secondary img,
+.about__img-tertiary img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about__img-main:hover img,
+.about__img-secondary:hover img,
+.about__img-tertiary:hover img {
+  transform: scale(1.04);
+}
+
+.about__img-secondary {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 52%;
+  height: 52%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  z-index: 3;
+  border: 5px solid var(--white);
+}
+
+.about__img-tertiary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: 35%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  z-index: 1;
+  border: 4px solid var(--white);
+}
+
+/* Badge on main image */
+.about__img-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-full);
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.about__img-badge-icon {
+  font-size: 1rem;
+}
+
+/* Floating Card */
+.about__floating-card {
+  position: absolute;
+  top: 40%;
+  right: -20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  box-shadow: var(--shadow-lg);
+  z-index: 4;
+  animation: float 3s ease-in-out infinite;
+}
+
+.about__floating-icon {
+  font-size: 1.5rem;
+}
+
+.about__floating-num {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.about__floating-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Content */
+.about__content {
+  padding: 20px 0;
+}
+
+.about__text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* Founders */
+.about__founders {
+  margin: 32px 0;
+  padding: 28px;
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--primary);
+}
+
+.about__founders-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.about__founders-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about__founder {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.about__founder-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.about__founder-avatar--2 {
+  background: var(--gold);
+}
+
+.about__founder-name {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.about__founder-role {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.about__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about__images {
+    height: 400px;
+  }
+
+  .about__floating-card {
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about__images {
+    height: 320px;
+  }
+
+  .about__founders-grid {
+    flex-direction: column;
+  }
+}
