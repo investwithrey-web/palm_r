@@ -7,8 +7,8 @@ const faqs = [
     a: 'Yes, Palm Resort is located just a 5-minute drive from Garh Ganga. It is the perfect peaceful retreat for families and groups visiting the holy river.'
   },
   {
-    q: 'Which resort is near Garhmukteshwar?',
-    a: 'Palm Resort is one of the premium resorts near Garhmukteshwar (approx 15 mins away), offering luxury rooms, swimming pools, and grand event spaces.'
+    q: 'Which resort or hotel is near Garh Ganga?',
+    a: 'Palm Resort is one of the premium resorts and hotels near Garh Ganga (approx 5 mins away), offering luxury rooms, swimming pools, and grand event spaces.'
   },
   {
     q: 'Does Palm Resort have a private pool?',

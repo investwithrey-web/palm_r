@@ -141,7 +141,7 @@ export default function Footer() {
                   <span>Near Garh Ganga, UP 244235</span>
                 </div>
                 <div className="footer__info-item">
-                  <span>Open 24 × 7</span>
+                  <span>Open 7 Days a Week</span>
                 </div>
               </div>
             </div>

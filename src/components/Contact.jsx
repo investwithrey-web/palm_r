@@ -128,7 +128,7 @@ export default function Contact() {
                 • Ghaziabad: 50 mins</span>
               </div>
               <div className="contact__map-info-item">
-                <span>Open 24/7 for Guests</span>
+                <span>Open 7 Days a Week</span>
               </div>
             </div>
           </div>
