@@ -23,6 +23,14 @@ const faqs = [
     a: 'Yes, Palm Resort is a premier wedding venue near Gajraula and Brijghat. We feature a spacious event hall, a grand open lawn, and curated wedding packages including décor and catering.'
   },
   {
+    q: 'Which is the best banquet hall in Gajraula?',
+    a: 'Palm Resort is widely recognized as the best banquet in Gajraula and Garh Ganga. We feature an elegantly decorated indoor banquet hall, expansive green lawn, and luxury rooms, complete with bespoke catering, sound, and lighting for weddings and celebrations.'
+  },
+  {
+    q: 'Is there a banquet with a swimming pool and lawn in Gajraula?',
+    a: 'Yes, Palm Resort is the premier banquet with a swimming pool and lawn near Gajraula. It is the perfect venue for open-air lawn weddings, poolside cocktail evenings, Haldi-Mehendi ceremonies, and private parties.'
+  },
+  {
     q: 'Does the resort have parking?',
     a: 'Yes, we provide ample, secure on-site parking for all our guests and event attendees.'
   },

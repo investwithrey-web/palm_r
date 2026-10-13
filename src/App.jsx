@@ -91,6 +91,16 @@ function App() {
             />} 
           />
           <Route 
+            path="/best-banquet-in-gajraula" 
+            element={<SeoPage 
+              title="Best Banquet in Gajraula" 
+              subtitle="Grand banquet hall with open lawn and swimming pool for dream weddings and parties." 
+              description="Palm Resort is known as the best banquet in Gajraula and Garh Ganga. Featuring an air-conditioned banquet hall, lush party lawn, and private swimming pool, it offers an all-in-one venue with catering, decor, and luxury rooms."
+              image="/images/IMG_12.jpg"
+              isEventPage={true}
+            />} 
+          />
+          <Route 
             path="/private-pool-resort-near-garhmukteshwar" 
             element={<SeoPage 
               title="Private Pool Resort near Garhmukteshwar" 

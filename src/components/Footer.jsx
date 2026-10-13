@@ -14,7 +14,12 @@ export default function Footer() {
           <div className="footer__grid">
             {/* Brand */}
             <div className="footer__brand">
-              <div className="footer__logo">
+              <div className="footer__logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <img 
+                  src="/images/Tropical%20Sunset%20Palm%20Resort%20Logo.png" 
+                  alt="Palm Resort Logo" 
+                  style={{ height: '50px', width: 'auto', objectFit: 'contain' }} 
+                />
                 <span className="footer__logo-text">Palm Resort</span>
               </div>
               <p className="footer__tagline">
@@ -100,6 +105,7 @@ export default function Footer() {
                 <li><a href="/resort-near-gajraula" className="footer__link"><span>›</span> Resort in Gajraula</a></li>
                 <li><a href="/birthday-party-venue-gajraula" className="footer__link"><span>›</span> Birthday Party Venue</a></li>
                 <li><a href="/wedding-venue-gajraula" className="footer__link"><span>›</span> Wedding Venue Gajraula</a></li>
+                <li><a href="/best-banquet-in-gajraula" className="footer__link"><span>›</span> Best Banquet in Gajraula</a></li>
                 <li><a href="/private-pool-resort-near-garhmukteshwar" className="footer__link"><span>›</span> Private Pool Resort</a></li>
                 <li><a href="/corporate-events-gajraula" className="footer__link"><span>›</span> Corporate Events</a></li>
               </ul>
