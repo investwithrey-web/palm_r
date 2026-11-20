@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import './Navbar.css';
 
 const navLinks = [
@@ -15,7 +16,8 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,9 +29,19 @@ export default function Navbar() {
 
   const handleNavClick = (href) => {
     setMenuOpen(false);
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname !== '/') {
+      navigate('/' + href);
+      setTimeout(() => {
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -37,7 +49,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`} id="navbar">
       <div className="navbar__inner container">
         {/* Logo */}
-        <a href="#home" className="navbar__logo" onClick={() => handleNavClick('#home')}>
+        <Link to="/" className="navbar__logo" onClick={() => handleNavClick('#home')}>
           <img 
             src="/images/Tropical%20Sunset%20Palm%20Resort%20Logo.png" 
             alt="Palm Resort Logo" 
@@ -47,7 +59,7 @@ export default function Navbar() {
             <span className="navbar__logo-name">Palm Resort</span>
             <span className="navbar__logo-sub">Garh Ganga, UP</span>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="navbar__nav">
@@ -55,7 +67,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className={`navbar__link ${activeSection === link.href.slice(1) ? 'active' : ''}`}
+              className="navbar__link"
               onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
             >
               {link.label}
